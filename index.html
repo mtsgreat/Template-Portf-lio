@@ -9,8 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ccecbb420b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Mateus Silva - Clone</title>
 </head>
 
 <body>
@@ -45,6 +46,11 @@
 
         </div>
         <div class="caixa-rigth">
+            <div class="darkMode">
+                <h1>Modo Noturno</h1>
+                <span class="btn-dark-mode" onclick="darkMode()"><i id="icon" class="fas fa-toggle-off"></i
+            ></span>
+            </div>
             <div class="informacoes">
                 <h1>Mateus Silva</h1>
                 <h3>Desenvolvedor Front-End</h3>
@@ -93,5 +99,13 @@
         </div>
     </div>
 </body>
+
+<script>
+    $(".btn-dark-mode").click(function() {
+        $(".container-full").toggleClass("dark-mode")
+        $(".caixa-left").toggleClass("dark-mode")
+        $("#icon").toggleClass("fas fa-toggle-on fas fa-toggle-off")
+    });
+</script>
 
 </html>

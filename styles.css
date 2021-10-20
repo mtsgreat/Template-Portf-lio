@@ -9,6 +9,7 @@
 
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 .container-full {
@@ -222,6 +223,27 @@ i.fab.fa-python {
     color: #ffd845;
 }
 
+.darkMode {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+span.btn-dark-mode {
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: white;
+    transition: 0.9s;
+}
+
+.darkMode h1 {
+    font-size: 20px;
+}
+
 @media only screen and (max-width: 600px) {
     .container-full {
         width: 100%;
@@ -263,5 +285,8 @@ i.fab.fa-python {
     }
     .tech .caixa {
         padding-bottom: 6px;
+    }
+    .darkMode {
+        display: none;
     }
 }
